@@ -34,13 +34,24 @@ hr{
 .img{
   display: flex; 
   justify-content: space-evenly;
-  margin-top: 150px;
+  margin-top: 90px;
   width: auto;
 
 }
 
 .image{
-  width: 40%;
+  width: 43%;
   height: auto;
 
+}
+
+#img1{
+  margin-right: 50px;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+#img2{
+  border: 2px solid white;
+  border-radius: 10px;
 }
