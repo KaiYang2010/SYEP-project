@@ -8,11 +8,19 @@
 </head>
 <body>
   <nav>
-    <li id="syep">SYEP Laguardia</li>
-    <li>Home</li>
-    <li>Content</li>
-    <li>Mission</li>
-    <li>Get Help</li>
+    <div id="syep">SYEP Laguardia</div>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Content</a></li>
+      <li><a href="#">Mission</a></li>
+      <li><a href="#">Get Help</a></li>
+    </ul>
   </nav>
   <hr>
 
@@ -23,6 +31,14 @@
   </div>
   <br>
   
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
   
 </body>
 </html>
