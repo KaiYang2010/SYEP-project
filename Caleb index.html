@@ -6,25 +6,41 @@
     
     
     
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="Caleb styles.css">
     <meta charset="utf-8" />
 
   </head>
   <body>
         
-    <nav>
-    <a href="#">Home</a>
-    <a href="#">Content</a>
-    <a href="#">Mission</a>
-    <a href="#">Get Help</a>
-    </nav>
-    
+  <nav>
+    <div id="syep">SYEP Laguardia</div>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Content</a></li>
+      <li><a href="#">Mission</a></li>
+      <li><a href="#">Get Help</a></li>
+    </ul>
+  </nav>
+    <hr>
 
     <h1>Why is this crucial?</h1>
     <p>Adolescent substance abuse can impact brain development, education, health and future opportunities.</p>
 
      <img src="https://www.whiterivermanor.com/wp-content/uploads/Is-drug-addiction-a-mental-health-illness.jpeg" alt="A picture " width="250">
     
+    <script>
+      const hamburger = document.getElementById('hamburger');
+      const navLinks = document.getElementById('nav-links');
 
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
+    </script>
   </body>
 </html>

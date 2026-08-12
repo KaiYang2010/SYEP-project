@@ -1,28 +1,28 @@
-html, body {
+body {
   margin: 0;
   padding: 0;
   background-color: #000000;
+  color: white;
+  font-family: sans-serif;
 }
 canvas {
   display: block;
 }
 nav{
-border-style: outset;
-border-color: #ffffff;
-text-align: center;
-padding-top: 45px;
-display: flex;
-justify-content: space-around;
-font-size: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 5% 20px 5%;
+  position: relative;
+  background-color: black;
 }
 
-a:link{
-color: white;
-padding: 14px 25px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-border-radius: 5px;
+.nav-links{
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
 }
 
 img{
@@ -44,4 +44,66 @@ border-style: hidden;
 text-align: center;
 }
 
+#syep{
+  font-weight: bold;
+}
 
+.nav-links a{
+  color: white;
+  text-decoration: none;
+  background-color: black;
+}
+
+.nav-links a:hover{
+  text-decoration: underline;
+}
+
+.hamburger{
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.hamburger span{
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+hr{
+  margin-top: 10px; 
+  border: 0.5px solid white;
+  background-color: black;
+}
+
+@media(max-width: 768px){
+  .hamburger{
+    display: flex;
+  }
+
+  .nav-links{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    padding: 20px 0;
+    border-bottom: 20px solid white;
+    text-align: center;
+    gap: 20px;
+    z-index: 10;
+  }
+
+  .nav-links.active{
+    display: flex;
+  }
+}
