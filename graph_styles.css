@@ -92,6 +92,32 @@ hr{
   background-color: white;
 }
 
+.img2 {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin: 30px auto 0;
+  width: 100%;
+  max-height: calc(100vh - 150px);
+  max-width: 100%; 
+  box-sizing: border-box;
+  padding: 50px 200px;
+}
+
+.image2 {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: none; 
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  max-height: calc(100vh - 250px);
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: white;
+}
+
 
 
 @media(max-width: 768px){
