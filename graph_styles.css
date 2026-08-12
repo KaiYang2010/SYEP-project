@@ -1,17 +1,17 @@
 body{
   color: white;
   background-color: black;
-  font-size: 30px;
+  font-size: 20px;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Cormorant Garamond";
 }
 
 nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 80px 5% 20px 5%;
+  padding: 50px 5% 20px 5%;
   position: relative;
   background-color: black;
 }

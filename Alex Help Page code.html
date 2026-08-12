@@ -8,23 +8,9 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
 
-
-
 </head>
 
 <body>
-
-<header>
-
-  <h3>Sober Awareness</h3>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Content</a>
-        <a href="#">Mission</a>
-        <a href="#">Get Help</a>
-    </nav>
-
-</header>
   
   <style>
 
@@ -35,46 +21,82 @@ body{
 }
 
 /* Navigation Bar */
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 5% 20px 5%;
+  position: relative;
+  background-color: black;
+  font-family:"Cormorant Garamond";
+  font-size: 20px;
+}
+
+
+#syep{
+  font-weight: bold;
+}
+
+.nav-links{
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a{
+  color: white;
+  text-decoration: none;
+  background-color: black;
+}
+
+.nav-links a:hover{
+  color: red;
+}
+
+.hamburger{
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.hamburger span{
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+hr{
+  margin-top: 10px; 
+  border: 0.5px solid white;
+  background-color: black;
+}
 
 header{
-      display:flex;
+    display:flex;
     justify-content:space-around;
     align-items:center;
     padding:15px;
     border-bottom:2px solid gray;
     animation:skate 1s ease;
-      font-family:"Aileron", arial;
+    font-family:"Cormorant Garamond";
 }
 
-header h3{
-    font-size: 18px;
-    font-weight:550;
-      align-items:center;
-}
 
-nav{
-    display:flex;
-      gap:150px;
-      align-items:center;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    font-size:20px;
-     font-weight:600;
-      font-family:"Cormorant Garamond", serif;
-}
-
-nav a:hover{
-    color:red;
-}
 
 /* Pre-Image*/
     body {
     margin: 0;
     background: black;
-    font-family: Arial, sans-serif;
+    font-family:"Cormorant Garamond";
     color: white;
 }
 
@@ -247,10 +269,51 @@ nav a:hover{
                 opacity: 1;
             }
         }
+        @media(max-width: 768px){
+            .hamburger{
+                display: flex;
+            }
+
+            .nav-links{
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: black;
+                padding: 20px 0;
+                border-bottom: 20px solid white;
+                text-align: center;
+                gap: 20px;
+                z-index: 10;
+            }
+
+            .nav-links.active{
+                display: flex;
+            }
+                    }
   </style>
   
 <main>
+    <nav>
+    <div id="syep">Sober Awareness</div>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#">Home</a></li> 
+      <li><a href="#">Content</a></li>
+      <li><a href="#">Mission</a></li>
+      <li><a href="#">Get Help</a></li>
+    </ul>
+  </nav>
+  <hr>
 <div class="container">
+
 
     <!-- YOUR EXISTING PICTURE -->
     <img src="https://www.bowditch.com/wp-content/uploads/2018/06/Support-1-768x418.jpg">
@@ -295,6 +358,12 @@ Seek Help:
   <script>
     // Simple JavaScript
 console.log("Website Loaded");
+const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
   </script>
   
 </main>

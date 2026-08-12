@@ -3,7 +3,7 @@ body {
   padding: 0;
   background-color: #000000;
   color: white;
-  font-family: sans-serif;
+  font-family: "Cormorant Garamond";
 }
 canvas {
   display: block;
@@ -12,7 +12,7 @@ nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 80px 5% 20px 5%;
+  padding: 50px 5% 20px 5%;
   position: relative;
   background-color: black;
 }
@@ -38,7 +38,7 @@ font-size: 60px;
 
 p{
 color: white;
-font-size: 30px;
+font-size: 20px;
 margin-right: 400px;
 border-style: hidden;
 text-align: center;
