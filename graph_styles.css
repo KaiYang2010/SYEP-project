@@ -1,7 +1,7 @@
 body{
   color: white;
   background-color: black;
-  font-size: 20px;
+  font-size: 25px;
   margin: 0;
   padding: 0;
   font-family: "Cormorant Garamond";
@@ -88,7 +88,7 @@ hr{
   object-fit: contain;
   max-height: calc(100vh - 250px);
   border: 2px solid white;
-  border-radius: 10px;
+  border-radius: 30px;
   background-color: white;
 }
 
@@ -114,7 +114,7 @@ hr{
   object-fit: contain;
   max-height: calc(100vh - 250px);
   border: 2px solid white;
-  border-radius: 10px;
+  border-radius: 30px;
   background-color: white;
 }
 

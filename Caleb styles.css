@@ -1,13 +1,115 @@
-body {
+*{
+  box-sizing: border-box;
+}
+
+body{
   margin: 0;
-  padding: 0;
-  background-color: #000000;
+  background-color: #000;
   color: white;
-  font-family: "Cormorant Garamond";
+  font-family: arial, sans-serif;
+
 }
-canvas {
-  display: block;
+
+.main{
+  min-height: calc(100vh - 3px);
+  display: flex;
+  padding: 17px 20px 20px 70px;
+  gap: 45px;
 }
+
+.left{
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(90px);
+}
+
+h1{
+  margin: 0;
+  font-family: "Times New Roman", serif;
+  font-weight: 400;
+  font-size: clamp(70px, 7.2vw, 135px);
+  line-height: 0.98;
+  letter-spacing: -5px;
+}
+
+.description{
+  margin-top: 55px;
+  max-width: 700px; 
+  font-family: Georgia, serif;
+  font-size: clamp(24px, 2vw, 39px);
+  text-align: center;
+
+}
+
+.description span{
+  color: #e31b2b;
+
+}
+
+.right{
+  width: 53%;
+  position: relative;
+  min-height: 795px;
+
+}
+
+.right img{
+  width: 100%;
+  height: 100%;
+  min-height: 795px;
+  object-fit: cover;
+  border-radius: 40px;
+  filter: grayscale(100%);
+
+}
+
+.info-card{
+  position: absolute;
+  left: -105px;
+  bottom: 230px;
+  width: 750px;
+  min-height: 300px;
+  background: #050505;
+
+  border: 2px solid #eee;
+  border-radius: 28px;
+
+  padding: 15px 35px 18px 78px;
+  display: flex;
+  align-items: flex-start;
+  box-shadow: 0 0 0 1px black;
+
+}
+
+.info-card p{
+  margin: 0;
+  color: #bdbdbd;
+  font-family: Arial, sans-serif;
+  font-size: 26px;
+  line-height: 1.55;
+  transition: opacity 0.7s ease;
+}
+
+.info-card strong{
+  color: red;
+  font-weight: 600;
+
+}
+
+.bullet{
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  background: white;
+  border-radius: 50%;
+  left: 48px;
+  top: 25px;
+
+}
+
+
+
 nav{
   display: flex;
   align-items: center;
@@ -15,11 +117,11 @@ nav{
   padding: 50px 5% 20px 5%;
   position: relative;
   background-color: black;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .nav-links{
-  display: flex;
+  display: flex;  
   list-style: none;
   gap: 30px;
   margin: 0;
@@ -29,20 +131,6 @@ nav{
 img{
   display: flex; 
   justify-content: space-evenly;
-}
-
-h1 {
-text-align: center;
-color: #ffffff;
-font-size: 60px;
-}
-
-p{
-color: white;
-font-size: 20px;
-margin-right: 400px;
-border-style: hidden;
-text-align: center;
 }
 
 #syep{
@@ -107,4 +195,65 @@ hr{
   .nav-links.active{
     display: flex;
   }
+
+
+  .hero{
+    flex-direction: column;
+    padding: 25px 20px;
+    gap: 40px;
+
+  }
+
+  .left{
+    width: 100%;
+  }
+
+  h1{
+    font-size: clamp(60px, 16vw, 100px);
+    letter-spacing: -3px;
+  }
+
+  .description{
+    margin-top: 30px;
+    font-size: 22px;
+    line-height: 1.45;
+  }
+  
+  .right{
+    width: 100%;
+    min-height: 500px;
+  }
+
+  .right img{
+    min-height: 500px;
+    height: 500px;
+    border-radius: 20px;
+  }
+  
+  .info-card {
+    left: 20px;
+    right: 20px;
+    bottom: 25px;
+
+    width: auto;
+    min-height: auto;
+
+    padding: 18px 20px 18px 55px;
+
+    border-radius: 20px;
+  }
+
+  .info-card p {
+      font-size: 14px;
+      line-height: 1.45;
+  }
+
+  .bullet {
+    left: 25px;
+    top: 24px;
+
+    width: 14px;
+    height: 14px;
+  }
+
 }

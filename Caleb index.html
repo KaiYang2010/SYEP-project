@@ -22,17 +22,46 @@
     </button>
     <ul class="nav-links" id="nav-links">
       <li><a href="#">Home</a></li>
-      <li><a href="#">Content</a></li>
+      <li><a href="Caleb index.html">Content</a></li>
       <li><a href="#">Mission</a></li>
       <li><a href="Alex Help Page code.html">Get Help</a></li>
     </ul>
   </nav>
     <hr>
 
-    <h1>Why is this crucial?</h1>
-    <p>Adolescent substance abuse can impact brain development, education, health and future opportunities.</p>
+    <main class="main">
+      
+      <section class="left">
 
-     <img src="https://www.whiterivermanor.com/wp-content/uploads/Is-drug-addiction-a-mental-health-illness.jpeg" alt="A picture " width="250">
+        <h1>WHY IS THIS CRUCIAL</h1>
+
+        <p class="description">
+          Adolescent substance abuse can impact <span>brain development</span>, <span>education</span>, <span>health</span> and <span>future opportunities</span>.
+        </p>
+
+      </section>
+
+      <section class="right">
+
+        <img src="https://www.whiterivermanor.com/wp-content/uploads/Is-drug-addiction-a-mental-health-illness.jpeg" alt="A picture " width="250" alt="substance abuse">
+        
+        <div class="info-card">
+          <div class="bullet"></div>
+
+          <p id="research-text">Research has found that adolescents who use multiple
+            substances have increased risks of future health
+            problems. Compared with non-users, teens using one
+            substance had <strong>1.82 times higher odds of
+            cardiovascular disease</strong> risk in adulthood, while those
+            using three substances had <strong>2.68 times higher odds.</strong></p>
+
+
+
+        </div>
+
+      </section>
+
+    </main> 
     
     <script>
       const hamburger = document.getElementById('hamburger');
@@ -41,6 +70,49 @@
       hamburger.addEventListener('click', () => {
         navLinks.classList.toggle('active');
       });
+
+
+      const researchText = document.getElementById("research-text");
+
+      const texts = [
+    `
+    Research has found that adolescents who use multiple
+    substances have increased risks of future health
+    problems. Compared with non-users, teens using one
+    substance had <strong>1.82 times higher odds of
+    cardiovascular disease</strong> risk in adulthood, while those
+    using three substances had <strong>2.68 times higher odds.</strong>
+    `,
+
+    `
+    Research found that teens using substances has <strong>1.74 times higher odds</strong> of having low grades and
+    <strong>2.71 times higher odds</strong> of skipping school compared
+    to teens who did not use substances.
+    `,
+
+    `
+    Teens who use substances are at greater risk of experiencing
+    <strong>mental health</strong> and <strong>behavioral problems</strong>. Compared with non-users,
+    adolescents who use substances have <strong>higher odds</strong> of
+    <strong>depression</strong>, <strong>anxiety</strong>, and <strong>other mental health difficulties</strong>.
+
+    `
+      ];
+
+      let currentText = 0;
+      setInterval(() => {
+        researchText.style.opacity ="0";
+        setTimeout(() => {
+          currentText = (currentText + 1)% texts.length;
+          researchText.innerHTML = texts[currentText];
+
+          researchText.style.opacity = "1";
+
+        }, 700)
+
+
+      }, 15000)
+
     </script>
   </body>
 </html>
