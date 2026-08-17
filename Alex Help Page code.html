@@ -12,12 +12,17 @@
 
 <body>
   
-  <style>
+<style>
+
+*{
+    box-sizing: border-box;
+}
 
 body{
+    margin: 0;
     background:black;
     color:white;
-    font-family:"Cormorant Garamond", serif;
+    font-family:"Cormorant Garmond";
 }
 
 /* Navigation Bar */
@@ -28,13 +33,13 @@ nav{
   padding: 50px 5% 20px 5%;
   position: relative;
   background-color: black;
-  font-family:"Cormorant Garamond";
-  font-size: 30px;
+  font-size: 25px;
 }
 
 
 #syep{
   font-weight: bold;
+
 }
 
 .nav-links{
@@ -54,6 +59,47 @@ nav{
 .nav-links a:hover{
   color: red;
 }
+
+
+
+
+.dropdown{
+  position: relative;
+}
+
+.dropdown-menu{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 10px;
+  min-width: 220px;
+  padding: 10px 0;
+  z-index: 20;
+}
+
+.dropdown-menu a{
+  display: block;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+.dropdown-menu a:hover{
+  background-color: #222;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-menu{
+  display: block;
+}
+
+
 
 .hamburger{
   display: none;
@@ -92,31 +138,24 @@ header{
 
 
 
-/* Pre-Image*/
-    body {
-    margin: 0;
-    background: black;
-    font-family:"Cormorant Garamond";
-    color: white;
-}
-
 .container {
     position: relative;
     width: 100%;
-    max-width: 1200px;
+    max-width: none;
+    min-height: 800px;
     margin: auto;
 }
     
 /* Image */
     img{
-      width:65%;
-  height: 75%;
+    width: 70%;
+    height: 800px;
     border: 1px solid black;
-     padding: 20px;
-       display: flex;
-  justify-content: flex-start;
-      animation: heroIn 1.1s ease forwards;
-
+    padding: 15px;
+    display: flex;
+    justify-content: flex-start;
+    animation: heroIn 1.1s ease forwards;
+    margin-left: 50px;
 }
     
 
@@ -127,23 +166,25 @@ header{
 /* TEXT ON PICTURE */
 .reach {
     position: absolute;
-    top: 190px;
-    left: 17%;
+    top: 300px;
+    left: 35%;
+    transform: translateX(-50%);
     background: #171c24;
     color: red;
-    padding: 12px 30px;
+    padding: 20px 40px;
     font-family: Georgia, serif;
-    font-size: 25px;
+    font-size: 50px;
     font-weight: bold;
+    white-space: nowrap;
               animation: panelGlow 3s ease-in-out infinite;
 }
 
 /* QUOTE */
 .quote {
-    font-size: 40px;
+    font-size: 90px;
     font-weight: bold;
-    width: 60%;
-    margin: 20px 0 0 5%;
+    width: 65%;
+    margin: 30px 0 0 3%;
   text-align: center;
   animation: quoteIn 1s ease .8s both;
 }
@@ -155,10 +196,10 @@ header{
 /* RIGHT BOX */
 .box {
     position: absolute;
-    right: 3.5%;
+    right: 7%;
     top: 30px;
-    width: 250px;
-    height: 500px;
+    width: 350px;
+    height: 800px;
     background: #4b0d0d;
     border-radius: 30px;
     padding: 30px 30px;
@@ -168,7 +209,7 @@ header{
 }
 
 .box h2 {
-    font-size: 25px;
+    font-size: 40px;
     text-decoration: underline;
     margin-bottom: 65px;
   
@@ -178,13 +219,15 @@ header{
 }
 
 .box a {
-    font-size: 19px;
+    font-size: 28px;
     font-weight: bold;
     margin-bottom: 80px;
     line-height: 1.4;
-  text-decoration: none;
-  color: white;
+    text-decoration: none;
+    color: white;
 }
+
+
 .box a:hover{
     color:blue;
 }
@@ -306,7 +349,13 @@ header{
     </button>
     <ul class="nav-links" id="nav-links">
       <li><a href="#">Home</a></li> 
-      <li><a href="Caleb index.html">Content</a></li>
+      <li class="dropdown">
+        <a href="#">Content</a>
+        <div class="dropdown-menu">
+          <a href="Caleb index.html">Why it's Crucial</a>
+          <a href="graph_page.html">Graphs</a>
+        </div>
+      </li>  
       <li><a href="#">Mission</a></li>
       <li><a href="Alex Help Page code.html">Get Help</a></li>
     </ul>

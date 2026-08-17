@@ -6,7 +6,7 @@ body{
   margin: 0;
   background-color: #000;
   color: white;
-  font-family: arial, sans-serif;
+  font-family: "Cormorant Garmond";
 
 }
 
@@ -147,6 +147,44 @@ img{
   text-decoration: underline;
 }
 
+.dropdown{
+  position: relative;
+}
+
+.dropdown-menu{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 10px;
+  min-width: 220px;
+  padding: 10px 0;
+  z-index: 20;
+}
+
+.dropdown-menu a{
+  display: block;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+.dropdown-menu a:hover{
+  background-color: #222;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-menu{
+  display: block;
+}
+
+
+
 .hamburger{
   display: none;
   flex-direction: column;
@@ -206,6 +244,7 @@ hr{
 
   .left{
     width: 100%;
+    transform: translateX(-50px);
   }
 
   h1{

@@ -14,6 +14,7 @@ nav{
   padding: 50px 5% 20px 5%;
   position: relative;
   background-color: black;
+  font-size: 25px
 }
 
 
@@ -38,6 +39,44 @@ nav{
 .nav-links a:hover{
   text-decoration: underline;
 }
+
+
+.dropdown{
+  position: relative;
+}
+
+.dropdown-menu{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 10px;
+  min-width: 220px;
+  padding: 10px 0;
+  z-index: 20;
+}
+
+.dropdown-menu a{
+  display: block;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+.dropdown-menu a:hover{
+  background-color: #222;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-menu{
+  display: block;
+}
+
 
 .hamburger{
   display: none;
@@ -149,10 +188,26 @@ hr{
     flex-direction: column;
     gap: 20px;
     margin-top: 0;
-    padding: 80px 10px 20px;
+    padding: 200px 10px 20px;
+
   }
 
   .image{
+    width: 100%;
+    max-width: 100%;
+    max-height: none;
+    margin-top: 0;
+    max-height: calc(100vh - 250px);
+  }
+
+  .img2{
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 192px;
+    padding: 80px 10px 20px;
+  }
+
+  .image2{
     width: 100%;
     max-width: 100%;
     max-height: none;
