@@ -5,6 +5,7 @@ body{
   margin: 0;
   padding: 0;
   font-family: "Cormorant Garamond";
+  zoom: 75%;
 }
 
 nav{
@@ -128,7 +129,7 @@ hr{
   max-height: calc(100vh - 250px);
   border: 2px solid white;
   border-radius: 30px;
-  background-color: white;
+  background-color: black;
 }
 
 .img2 {
@@ -154,7 +155,7 @@ hr{
   max-height: calc(100vh - 250px);
   border: 2px solid white;
   border-radius: 30px;
-  background-color: white;
+  background-color: black;
 }
 
 
