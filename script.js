@@ -9,43 +9,14 @@ document.addEventListener("DOMContentLoaded", () => {
      MOBILE NAVIGATION
      ======================================================= */
 
-  const navToggle = document.querySelector(".nav-toggle");
-  const navLinks = document.querySelector(".nav-links");
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
 
-  if (navToggle && navLinks) {
-
-    navToggle.addEventListener("click", () => {
-
-      const isOpen =
-        navToggle.getAttribute("aria-expanded") === "true";
-
-      navToggle.setAttribute(
-        "aria-expanded",
-        String(!isOpen)
-      );
-
-      navLinks.classList.toggle("open");
-
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
     });
 
-
-    navLinks.querySelectorAll("a").forEach(link => {
-
-      link.addEventListener("click", () => {
-
-        navLinks.classList.remove("open");
-
-        navToggle.setAttribute(
-          "aria-expanded",
-          "false"
-        );
-
-      });
-
-    });
-
-  }
-
+     const researchText = document.getElementById("research-text");
 
   /* =======================================================
      REDUCED MOTION
