@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>The Prevention Project — Youth &amp; Adolescent Substance Abuse Awareness</title>
+
+  <meta
+    name="description"
+    content="Research and awareness on youth and adolescent substance abuse prevention."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+  <a class="skip-link" href="#main">
+    Skip to content
+  </a>
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <div class="progress-bar" aria-hidden="true">
+    <div class="progress-fill" id="progressFill"></div>
+  </div>
+
+
+  <!-- =========================================================
+       DESKTOP DOT RAIL
+       ========================================================= -->
+
+  <nav class="rail" aria-label="Page sections">
+
+    <a
+      class="rail-dot active"
+      href="#top"
+      data-section="top"
+      aria-label="Home"
+    ></a>
+
+    <a
+      class="rail-dot"
+      href="#issue"
+      data-section="issue"
+      aria-label="The Issue"
+    ></a>
+
+    <a
+      class="rail-dot"
+      href="#happens"
+      data-section="happens"
+      aria-label="What Happens"
+    ></a>
+
+    <a
+      class="rail-dot"
+      href="#research"
+      data-section="research"
+      aria-label="Research"
+    ></a>
+
+    <a
+      class="rail-dot"
+      href="#why"
+      data-section="why"
+      aria-label="Why It Matters"
+    ></a>
+
+    <a
+      class="rail-dot"
+      href="#support"
+      data-section="support"
+      aria-label="Support"
+    ></a>
+
+  </nav>
+
+
+  <!-- =========================================================
+       NAVIGATION
+       ========================================================= -->
+
+  <header class="navbar">
+
+    <a href="#top" class="nav-logo">
+      The Prevention Project
+    </a>
+
+    <button
+      class="nav-toggle"
+      aria-expanded="false"
+      aria-controls="nav-links"
+      aria-label="Toggle navigation"
+    >
+      Menu
+    </button>
+
+    <nav id="nav-links" class="nav-links">
+
+      <a
+        href="#top"
+        class="nav-link active"
+        data-section="top"
+      >
+        Home
+      </a>
+
+      <a
+        href="#issue"
+        class="nav-link"
+        data-section="issue"
+      >
+        The&nbsp;Issue
+      </a>
+
+      <a
+        href="#happens"
+        class="nav-link"
+        data-section="happens"
+      >
+        What&nbsp;Happens
+      </a>
+
+      <a
+        href="#research"
+        class="nav-link"
+        data-section="research"
+      >
+        Research
+      </a>
+
+      <a
+        href="#support"
+        class="nav-link"
+        data-section="support"
+      >
+        Support
+      </a>
+
+    </nav>
+
+  </header>
+
+
+  <main id="main">
+
+
+    <!-- =======================================================
+         HERO
+         ======================================================= -->
+
+    <section id="top" class="hero">
+
+      <div class="hero-head">
+
+        <p class="label reveal">
+          The Prevention Project
+        </p>
+
+        <h1
+          class="display-xl split"
+          aria-label="Prevention is awareness."
+        >
+
+          <span aria-hidden="true">
+
+            <span
+              class="word"
+              style="--i:0"
+            >
+              Prevention
+            </span>
+
+            <br>
+
+            <span
+              class="word"
+              style="--i:1"
+            >
+              is
+            </span>
+
+            <span
+              class="word"
+              style="--i:2"
+            >
+              awareness.
+            </span>
+
+          </span>
+
+        </h1>
+
+        <p class="lede reveal">
+          Youth &amp; Adolescent Substance Abuse —
+          a research and awareness initiative.
+        </p>
+
+      </div>
+
+
+      <figure class="hero-image parallax-fig">
+
+        <div class="img-clip">
+
+          <img
+            class="parallax-img"
+            src="https://pittplusme.org/ctsi/imagelibrary/getimage?FileName=female-holding-alcohol-pills-cigerettes-banner.jpg"
+            alt="Hands holding a cigarette, a bottle, and pills"
+            loading="eager"
+          >
+
+        </div>
+
+      </figure>
+
+
+      <a
+        href="#issue"
+        class="scroll-cue reveal"
+      >
+
+        <span>
+          Explore the issue
+        </span>
+
+        <span
+          class="scroll-cue-line"
+          aria-hidden="true"
+        ></span>
+
+      </a>
+
+    </section>
+
+
+    <!-- =======================================================
+         MARQUEE
+         ======================================================= -->
+
+    <div
+      class="marquee"
+      aria-hidden="true"
+    >
+
+      <div class="marquee-track">
+
+        <span>
+          PREVENTION&nbsp;&nbsp;—&nbsp;&nbsp;
+          AWARENESS&nbsp;&nbsp;—&nbsp;&nbsp;
+          RESEARCH&nbsp;&nbsp;—&nbsp;&nbsp;
+          SUPPORT&nbsp;&nbsp;—&nbsp;&nbsp;
+        </span>
+
+        <span>
+          PREVENTION&nbsp;&nbsp;—&nbsp;&nbsp;
+          AWARENESS&nbsp;&nbsp;—&nbsp;&nbsp;
+          RESEARCH&nbsp;&nbsp;—&nbsp;&nbsp;
+          SUPPORT&nbsp;&nbsp;—&nbsp;&nbsp;
+        </span>
+
+      </div>
+
+    </div>
+
+
+    <!-- =======================================================
+         THE ISSUE
+         ======================================================= -->
+
+    <section
+      id="issue"
+      class="issue"
+    >
+
+      <span
+        class="chapter-num"
+        aria-hidden="true"
+      >
+        01
+      </span>
+
+      <div class="issue-grid">
+
+        <p class="stat-num reveal-scale">
+
+          <span class="stat-red">
+
+            <span
+              class="count"
+              data-target="90"
+            >
+              0
+            </span>
+
+          </span>
+
+          <span class="stat-percent">
+            %
+          </span>
+
+        </p>
+
+
+        <div class="issue-copy reveal">
+
+          <p class="label label--on-dark">
+            The Issue
+          </p>
+
+          <p class="issue-text">
+            More than 90% of adults with a substance use disorder began using
+            during adolescence.
+          </p>
+
+          <p class="source">
+            Source — SAMHSA, Youth &amp; Families
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         WHAT HAPPENS
+         ======================================================= -->
+
+    <section
+      id="happens"
+      class="happens"
+    >
+
+      <span
+        class="chapter-num"
+        aria-hidden="true"
+      >
+        02
+      </span>
+
+
+      <p class="label reveal">
+        The Issue / 02
+      </p>
+
+
+      <h2
+        class="display-lg split"
+        aria-label="What happens?"
+      >
+
+        <span aria-hidden="true">
+
+          <span
+            class="word highlight"
+            style="--i:0"
+          >
+            What
+          </span>
+
+          <br>
+
+          <span
+            class="word"
+            style="--i:1"
+          >
+            happens?
+          </span>
+
+        </span>
+
+      </h2>
+
+
+      <p class="happens-text reveal">
+
+        Early use interrupts a brain that is still under construction.
+        The adolescent years are when patterns form — and when they're
+        hardest to unlearn.
+
+        What starts as experimentation in the early teens can quietly
+        redirect a life well before adulthood.
+
+      </p>
+
+    </section>
+
+
+    <!-- =======================================================
+         RESEARCH
+         ======================================================= -->
+
+    <section
+      id="research"
+      class="research"
+    >
+
+      <span
+        class="chapter-num"
+        aria-hidden="true"
+      >
+        03
+      </span>
+
+
+      <p class="label reveal">
+        Research / 01
+      </p>
+
+
+      <h2 class="display-md reveal">
+        The data behind<br>
+        the story
+      </h2>
+
+
+      <!-- =====================================================
+           FIGURE 01
+           ===================================================== -->
+
+      <figure
+        class="research-figure research-figure--lg"
+      >
+
+        <div class="img-clip research-image-wrap">
+
+          <img
+            src="https://www.samhsa.gov/data/sites/default/files/WebFiles_TEDS_SR142_AgeatInit_07-10-14/TEDS-SR142-AgeatInit-2014-fig1.jpg"
+            alt="SAMHSA figure showing age patterns of substance use initiation among treatment admissions"
+            loading="lazy"
+          >
+
+        </div>
+
+
+        <figcaption class="reveal">
+
+          <span>
+            Fig. 01
+          </span>
+
+          Age of substance-use initiation — SAMHSA
+
+        </figcaption>
+
+      </figure>
+
+
+      <!-- =====================================================
+           FIGURE 02
+           ===================================================== -->
+
+      <figure
+        class="research-figure research-figure--sm"
+      >
+
+        <div class="img-clip research-image-wrap">
+
+          <img
+            src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/7c82/3633650/aa886c35581a/nihms421988f1.jpg"
+            alt="Longitudinal research figure comparing adolescent substance-use trajectories following a family-based prevention intervention"
+            loading="lazy"
+          >
+
+        </div>
+
+
+        <figcaption class="reveal">
+
+          <span>
+            Fig. 02
+          </span>
+
+          Substance-use trajectories following prevention intervention
+
+        </figcaption>
+
+      </figure>
+
+
+      <!-- =====================================================
+           BRAIN DEVELOPMENT ESSAY
+           ===================================================== -->
+
+      <a
+        href="essay.html"
+        class="essay-link reveal"
+      >
+
+        <span class="essay-link-label">
+          Research / 02
+        </span>
+
+
+        <span class="essay-link-title">
+
+          Why adolescent brain development makes
+          substance use during adolescence
+          particularly concerning
+
+        </span>
+
+
+        <span class="essay-link-cta">
+
+          Read the full essay
+
+          <span aria-hidden="true">
+            →
+          </span>
+
+        </span>
+
+      </a>
+
+    </section>
+
+
+    <!-- =======================================================
+         WHY IT MATTERS
+         ======================================================= -->
+
+    <section
+      id="why"
+      class="why"
+    >
+
+      <span
+        class="chapter-num chapter-num--light"
+        aria-hidden="true"
+      >
+        04
+      </span>
+
+
+      <p class="label label--on-dark reveal">
+        Why it matters
+      </p>
+
+
+      <h2 class="display-md why-heading reveal">
+
+        Adolescent substance use reaches further
+        than the moment itself.
+
+      </h2>
+
+
+      <ul class="why-list">
+
+
+        <!-- BRAIN DEVELOPMENT -->
+
+        <li class="reveal">
+
+          <a
+            href="essay.html"
+            class="why-link"
+          >
+
+            <span class="why-index">
+              01
+            </span>
+
+            <span class="why-term">
+              Brain development
+            </span>
+
+            <span
+              class="why-arrow"
+              aria-hidden="true"
+            >
+              ↗
+            </span>
+
+          </a>
+
+        </li>
+
+
+        <!-- EDUCATION -->
+
+        <li class="reveal">
+
+          <a
+            href="education.html"
+            class="why-link"
+          >
+
+            <span class="why-index">
+              02
+            </span>
+
+            <span class="why-term">
+              Education
+            </span>
+
+            <span
+              class="why-arrow"
+              aria-hidden="true"
+            >
+              ↗
+            </span>
+
+          </a>
+
+        </li>
+
+
+        <!-- HEALTH -->
+
+        <li class="reveal">
+
+          <a
+            href="health.html"
+            class="why-link"
+          >
+
+            <span class="why-index">
+              03
+            </span>
+
+            <span class="why-term">
+              Health
+            </span>
+
+            <span
+              class="why-arrow"
+              aria-hidden="true"
+            >
+              ↗
+            </span>
+
+          </a>
+
+        </li>
+
+
+        <!-- RELATIONSHIPS -->
+
+        <li class="reveal">
+
+          <a
+            href="relationships.html"
+            class="why-link"
+          >
+
+            <span class="why-index">
+              04
+            </span>
+
+            <span class="why-term">
+              Relationships
+            </span>
+
+            <span
+              class="why-arrow"
+              aria-hidden="true"
+            >
+              ↗
+            </span>
+
+          </a>
+
+        </li>
+
+
+        <!-- FUTURE OPPORTUNITIES -->
+
+        <li class="reveal">
+
+          <a
+            href="future.html"
+            class="why-link"
+          >
+
+            <span class="why-index">
+              05
+            </span>
+
+            <span class="why-term">
+              Future opportunities
+            </span>
+
+            <span
+              class="why-arrow"
+              aria-hidden="true"
+            >
+              ↗
+            </span>
+
+          </a>
+
+        </li>
+
+      </ul>
+
+
+      <figure class="why-image parallax-fig">
+
+        <div class="img-clip">
+
+          <img
+            class="parallax-img"
+            src="https://www.whiterivermanor.com/wp-content/uploads/Is-drug-addiction-a-mental-health-illness.jpeg"
+            alt="A photograph representing mental health and addiction"
+            loading="lazy"
+          >
+
+        </div>
+
+      </figure>
+
+    </section>
+
+
+    <!-- =======================================================
+         SUPPORT MARQUEE
+         ======================================================= -->
+
+    <div
+      class="marquee marquee--reverse"
+      aria-hidden="true"
+    >
+
+      <div class="marquee-track">
+
+        <span>
+          YOU ARE NOT ALONE&nbsp;&nbsp;—&nbsp;&nbsp;
+          HELP IS AVAILABLE&nbsp;&nbsp;—&nbsp;&nbsp;
+        </span>
+
+        <span>
+          YOU ARE NOT ALONE&nbsp;&nbsp;—&nbsp;&nbsp;
+          HELP IS AVAILABLE&nbsp;&nbsp;—&nbsp;&nbsp;
+        </span>
+
+      </div>
+
+    </div>
+
+
+    <!-- =======================================================
+         SUPPORT
+         ======================================================= -->
+
+    <section
+      id="support"
+      class="support"
+    >
+
+      <span
+        class="chapter-num"
+        aria-hidden="true"
+      >
+        05
+      </span>
+
+
+      <p class="label reveal">
+        Support
+      </p>
+
+
+      <h2
+        class="display-lg split"
+        aria-label="Need support?"
+      >
+
+        <span aria-hidden="true">
+
+          <span
+            class="word"
+            style="--i:0"
+          >
+            Need
+          </span>
+
+          <span
+            class="word"
+            style="--i:1"
+          >
+            support?
+          </span>
+
+        </span>
+
+      </h2>
+
+
+      <p class="support-text reveal">
+
+        If you or someone you know needs help,
+        support exists — today.
+
+      </p>
+
+
+      <a
+        class="cta reveal"
+        id="ctaButton"
+        href="https://www.samhsa.gov/find-help/national-helpline"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <span class="cta-inner">
+
+          Find support now
+
+          <span aria-hidden="true">
+            →
+          </span>
+
+        </span>
+
+      </a>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================================================
+       FOOTER
+       ========================================================= -->
+
+  <footer class="site-footer">
+
+    <p>
+      The Prevention Project
+    </p>
+
+    <p>
+      Youth &amp; Adolescent Substance Abuse Research
+    </p>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
